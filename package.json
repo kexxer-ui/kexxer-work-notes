@@ -1,0 +1,9 @@
+{
+  "description": "Simple public guidance and tooling for local developer work notes.",
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  },
+  "name": "kexxer-work-notes",
+  "private": true,
+  "version": "0.1.0-alpha.1"
+}
