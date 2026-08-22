@@ -43,3 +43,12 @@ history. Work-note instances may live in a separate private repository.
   filename `<repository>-work-note.md`.
 - A work-notes repository may organize notes in matching repository directories
   and keep supporting plans alongside them.
+
+### Plan Document Guidance
+
+- [Plan Document Guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/plan-document-guidance.md)
+  is the primary, authoritative definition of the plan format.
+- Plans use concise Overview, Facts, TODO, and Done sections composed of simple
+  bullets.
+- Plans live beside their repository work note at
+  `<repository>/plans/YYYY-MM-DD--<plan-name>.md`.
