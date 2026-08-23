@@ -40,7 +40,7 @@ history. Work-note instances may live in a separate private repository.
 - [Work Notes Document Guidance](docs/work-notes-document-guidance.md) is the
   primary, authoritative definition of the work-note format.
 - Each repository work note covers exactly one primary repository and uses the
-  filename `<repository>-work-note.md`.
+  filename `<repository>-work-notes.md`.
 - A work-notes repository may organize notes in matching repository directories
   and keep supporting plans alongside them.
 

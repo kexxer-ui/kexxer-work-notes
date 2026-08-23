@@ -11,14 +11,14 @@ synchronized with this one.
 
 [Kexxer Work Notes document guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-document-guidance.md)
 is the primary, authoritative copy. Keep embedded copies synchronized with it.
-This is guidance version `1.13.2`.
+This is guidance version `1.13.3`.
 
 This is a working notes file maintained collaboratively with AI during active
 work.
 
 - Please respond with very short messages during this conversation. Prefer
   concise status updates and direct answers over long explanations.
-- Name repository work notes `<repository>-work-note.md`, using the exact
+- Name repository work notes `<repository>-work-notes.md`, using the exact
   primary repository directory name.
 - When the human identifies this document as the active record for the work,
   confirm that relationship and begin maintaining the document immediately. Do
