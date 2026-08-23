@@ -1,10 +1,10 @@
 # Kexxer Work Notes
 
-## Guidance For This Document <!-- v0.3.1 -->
+## Guidance For This Document
 
-The primary, authoritative copy of this guidance is
-`https://github.com/kexxer-ui/kexxer-readme/blob/main/docs/readme-document-guidance.md`.
-Keep embedded copies synchronized with it.
+[Kexxer README document guidance](https://github.com/kexxer-ui/kexxer-readme/blob/main/docs/readme-document-guidance.md)
+is the primary, authoritative copy. Keep embedded copies synchronized with it.
+This is guidance version `0.3.2`.
 
 - Apart from this guidance section, a repository README has two main `##`
   sections: Overview and Developer Notes.
@@ -37,8 +37,8 @@ history. Work-note instances may live in a separate private repository.
 
 ### Work Notes Document Guidance
 
-- [Work Notes Document Guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-document-guidance.md)
-  is the primary, authoritative definition of the work-note format.
+- [Work Notes Document Guidance](docs/work-notes-document-guidance.md) is the
+  primary, authoritative definition of the work-note format.
 - Each repository work note covers exactly one primary repository and uses the
   filename `<repository>-work-note.md`.
 - A work-notes repository may organize notes in matching repository directories
@@ -46,8 +46,8 @@ history. Work-note instances may live in a separate private repository.
 
 ### Plan Document Guidance
 
-- [Plan Document Guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/plan-document-guidance.md)
-  is the primary, authoritative definition of the plan format.
+- [Plan Document Guidance](docs/plan-document-guidance.md) is the primary,
+  authoritative definition of the plan format.
 - Plans use concise Overview, Facts, TODO, and Done sections composed of simple
   bullets.
 - Plans live beside their repository work note at

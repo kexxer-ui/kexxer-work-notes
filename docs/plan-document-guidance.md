@@ -1,18 +1,17 @@
 # Plan Document Guidance
 
 This document is the primary, authoritative definition of the plan format. Its
-parent document is the
-[`kexxer-work-notes` README](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/README.md).
+parent document is the [`kexxer-work-notes` README](../README.md).
 
 Embed the following guidance in each plan and keep every copy synchronized with
 this one.
 
 ```markdown
-## Plan Document Guidance <!-- v1.0.0 -->
+## Plan Document Guidance
 
-The primary, authoritative copy of this guidance is
-`https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/plan-document-guidance.md`.
-Keep embedded copies synchronized with it.
+[Kexxer Work Notes plan guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/plan-document-guidance.md)
+is the primary, authoritative copy. Keep embedded copies synchronized with it.
+This is guidance version `1.0.1`.
 
 This is a concise working plan maintained collaboratively by people and AI
 agents.
@@ -43,9 +42,9 @@ Use this starting structure:
 ```markdown
 # Plan Title
 
-## Plan Document Guidance <!-- v1.0.0 -->
+## Plan Document Guidance
 
-Copy the authoritative guidance here.
+Copy the authoritative guidance here. This is guidance version `1.0.1`.
 
 ## Overview
 

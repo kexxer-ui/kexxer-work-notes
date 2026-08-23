@@ -1,18 +1,17 @@
 # Work Notes Document Guidance
 
 This document is the primary, authoritative definition of the work-note format.
-Its parent document is the
-[`kexxer-work-notes` README](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/README.md).
+Its parent document is the [`kexxer-work-notes` README](../README.md).
 
 Embed the following guidance in each repository work note and keep every copy
 synchronized with this one.
 
 ```markdown
-## Work Notes Document Guidance <!-- v1.13.1 -->
+## Work Notes Document Guidance
 
-The primary, authoritative copy of this guidance is
-`https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-document-guidance.md`.
-Keep embedded copies synchronized with it.
+[Kexxer Work Notes document guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-document-guidance.md)
+is the primary, authoritative copy. Keep embedded copies synchronized with it.
+This is guidance version `1.13.2`.
 
 This is a working notes file maintained collaboratively with AI during active
 work.
