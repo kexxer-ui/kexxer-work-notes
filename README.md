@@ -26,12 +26,13 @@ This is guidance version `0.3.2`.
 
 ## Overview
 
-`kexxer-work-notes` defines a lightweight convention for repository-specific
-work notes maintained collaboratively by people and AI agents.
+`kexxer-work-notes` defines lightweight conventions for work notes, plans, and
+project roadmaps maintained collaboratively by people and AI agents.
 
 The convention keeps durable project knowledge in repository documentation and
-uses work notes for immediate plans, current handoffs, and concise completed
-history. Work-note instances may live in a separate private repository.
+uses work notes for current handoffs and concise completed history, plans for
+focused execution details, and roadmaps for projects being deliberately pursued.
+These working documents may live in a separate private repository.
 
 ## Developer Notes
 
@@ -52,3 +53,11 @@ history. Work-note instances may live in a separate private repository.
   bullets.
 - Plans live beside their repository work note at
   `<repository>/plans/YYYY-MM-DD--<plan-name>.md`.
+
+### Roadmaps Document Guidance
+
+- [Roadmaps Document Guidance](docs/roadmaps-document-guidance.md) defines
+  project identity, phased actions, and the active-to-completed workflow.
+- Roadmaps live together in top-level `roadmaps/` directories, with one primary
+  repository and optional related repositories.
+- Each roadmap links to the authoritative guidance instead of embedding a copy.
