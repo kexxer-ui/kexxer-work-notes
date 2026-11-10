@@ -48,11 +48,12 @@ These working documents may live in a separate private repository.
 ### Plan Document Guidance
 
 - [Plan Document Guidance](docs/plan-document-guidance.md) is the primary,
-  authoritative definition of the plan format.
+  authoritative definition of the plan format; each plan links to it instead of
+  embedding a copy.
 - Plans use concise Overview, Facts, TODO, and Done sections composed of simple
   bullets.
-- Plans live beside their repository work note at
-  `<repository>/plans/YYYY-MM-DD--<plan-name>.md`.
+- Plans live in `<repository>/plans/active/` beside their repository work note
+  and move to `completed/` when finished.
 
 ### Roadmaps Document Guidance
 

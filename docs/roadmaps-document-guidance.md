@@ -3,7 +3,7 @@
 This document is the primary, authoritative definition of the roadmap format.
 Its parent document is the [`kexxer-work-notes` README](../README.md).
 
-This is guidance version `1.2.0`.
+This is guidance version `1.4.0`.
 
 A roadmap describes a project being deliberately pursued: its purpose, the
 phases toward its goal, and the actions needed to complete those phases. Plans
@@ -63,6 +63,11 @@ provide supporting execution details; work notes preserve handoffs and history.
   concrete and refine later phases when needed.
 - Link to supporting plans or work notes when useful. Keep detailed execution
   checklists in one place rather than maintaining duplicate task lists.
+- Add a `Plan:` line below the repository details linking each supporting plan.
+  Plans follow the [plan guidance](plan-document-guidance.md) and start their
+  names with the roadmap's codename.
+- Keep the roadmap a glanceable map: phases and outcomes only. Put execution
+  details, facts, and decisions in the plan.
 - Before moving a roadmap to `completed/`, verify that its intended outcome has
   been achieved and resolve any remaining actions explicitly. Check relative
   links after moving the file.
@@ -74,13 +79,16 @@ provide supporting execution details; work notes preserve handoffs and history.
 
 [Roadmap guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/roadmaps-document-guidance.md)
 
-Guidance version: 1.2.0
+Guidance version: 1.4.0
 
 Codename: Compass
 
 Primary repository: example-repository
 
 Related repositories: another-repository
+
+Plan:
+[Compass plan](../../example-repository/plans/active/YYYY-MM-DD--compass-plan.md)
 
 ## Overview
 
