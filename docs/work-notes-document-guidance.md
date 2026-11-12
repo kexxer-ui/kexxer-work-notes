@@ -3,7 +3,12 @@
 This document is the primary, authoritative definition of the work-note format.
 Its parent document is the [`kexxer-work-notes` README](../README.md).
 
-Embed the following guidance in each repository work note and keep every copy
+Work notes are optional project documents. Keep `<codename>--work-notes.md`
+inside its project folder, following the
+[work-notes repository guidance](work-notes-repository-guidance.md). Its scope
+is that project, even when the primary repository has other projects.
+
+Embed the following guidance in each project work note and keep every copy
 synchronized with this one.
 
 ```markdown
@@ -11,15 +16,21 @@ synchronized with this one.
 
 [Kexxer Work Notes document guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-document-guidance.md)
 is the primary, authoritative copy. Keep embedded copies synchronized with it.
-This is guidance version `1.13.3`.
+This is guidance version `1.14.0`.
 
-This is a working notes file maintained collaboratively with AI during active
-work.
+This is a project working notes file maintained collaboratively with AI during
+active work.
 
 - Please respond with very short messages during this conversation. Prefer
   concise status updates and direct answers over long explanations.
-- Name repository work notes `<repository>-work-notes.md`, using the exact
-  primary repository directory name.
+- Name this file `<codename>--work-notes.md`, using the project's lowercase,
+  hyphenated codename so editor tabs identify the project. Keep it inside the
+  project folder alongside its plans and optional roadmap.
+- Follow the
+  [work-notes repository guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-repository-guidance.md)
+  for project naming and lifecycle. Create folders only for actual projects.
+- Scope these notes to this project. Other projects in the same repository have
+  their own folders and may keep their own work notes.
 - When the human identifies this document as the active record for the work,
   confirm that relationship and begin maintaining the document immediately. Do
   not wait for a separate request to edit it.
@@ -31,7 +42,8 @@ work.
 - Always keep `## What's Next` first among the working sections and
   `## Current Status` last, above the dated task sections.
 - Place `## Repositories Covered` between `What's Next` and `Current Status`.
-  List exactly one primary repository using its exact directory name.
+  List exactly one primary repository using its exact directory name, matching
+  the project folder.
 - Mention dependencies and other affected repositories in `What's Next`,
   `Current Status`, or NIs rather than adding them to `Repositories Covered`.
 - Limit `What's Next` to three bullets of no more than 25 words each. Use it for
@@ -57,6 +69,10 @@ work.
   practical.
 - Put durable architectural explanation in repository documentation rather than
   work notes.
+- Keep detailed execution checklists in the project's plans and link to them
+  rather than duplicating them in these notes. A roadmap is optional.
+- Move these notes with the entire project folder when the project is completed;
+  preserve completed task history.
 - Add an NI only after the work is complete. Preserve completed task history
   except when correcting an inaccurate entry.
 - Organize completed tasks under `## YYYY-MM-DD` date sections. Keep the most

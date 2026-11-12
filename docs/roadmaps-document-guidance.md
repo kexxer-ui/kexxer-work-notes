@@ -3,30 +3,28 @@
 This document is the primary, authoritative definition of the roadmap format.
 Its parent document is the [`kexxer-work-notes` README](../README.md).
 
-This is guidance version `1.4.0`.
+This is guidance version `1.5.0`.
 
-A roadmap describes a project being deliberately pursued: its purpose, the
-phases toward its goal, and the actions needed to complete those phases. Plans
-provide supporting execution details; work notes preserve handoffs and history.
+A roadmap is an optional map of a project's purpose, phases, and intended
+outcomes. A project exists independently of its roadmap and may have several
+plans without having a roadmap. Plans provide execution details; work notes
+preserve handoffs and history.
 
 ## Location and Lifecycle
 
-- Keep roadmaps together in the work-notes repository's top-level `roadmaps/`
-  directory, even when a project involves multiple repositories.
-- Store current commitments in
-  `roadmaps/active/YYYY-MM-DD--<codename>-roadmap.md`. Use the creation date and
-  a lowercase, hyphenated codename; every roadmap filename must end in
-  `-roadmap.md`.
-- Active means work you intend to move forward now. Unfinished work alone does
-  not qualify a roadmap as active.
-- Move a finished roadmap into `roadmaps/completed/`, keeping its filename and
-  checked actions. Add a `Completed: YYYY-MM-DD` line to its project details.
-- If needed, introduce `paused/` or `cancelled/` for work no longer being
-  pursued. Keep it distinct from completed work and outside `active/`.
-- Let the directory determine overall status; do not maintain a duplicate status
-  field inside the roadmap.
-- Review `roadmaps/active/` when deciding what to work on next. Keep it limited
-  to current priorities so projects remain visible.
+- Keep the optional roadmap inside its project folder as
+  `<codename>--roadmap.md`, following the
+  [work-notes repository guidance](work-notes-repository-guidance.md). Use the
+  project's lowercase, hyphenated codename so editor tabs identify the project.
+- A current project's roadmap lives at
+  `projects/active/YYYY-MM-DD--<repo-dir>--<codename>/<codename>--roadmap.md`.
+- Keep at most one roadmap per project. Do not create a separate top-level
+  roadmap collection or roadmap lifecycle directories.
+- The project folder determines overall status; do not maintain a duplicate
+  project status field inside the roadmap.
+- Move the roadmap with the entire project folder when the project is completed.
+  Preserve checked actions and add `Completed: YYYY-MM-DD` to its project
+  details.
 
 ## Document Shape
 
@@ -39,8 +37,9 @@ provide supporting execution details; work notes preserve handoffs and history.
   it is older or missing, read the current guidance and bring the roadmap into
   compliance before updating its recorded version. Do not update the version
   merely because newer guidance exists.
-- Record a stable project codename and exactly one primary repository using its
-  exact directory name. List related repositories only when applicable.
+- Record the project's stable codename and exactly one primary repository using
+  its exact directory name, matching the project folder. List related
+  repositories only when applicable.
 - Follow the project details with `## Overview`, then numbered phase headings
   such as `## Phase 1: Establish the Foundation`.
 - Use the overview to explain the project's purpose, intended outcome, and scope
@@ -63,14 +62,15 @@ provide supporting execution details; work notes preserve handoffs and history.
   concrete and refine later phases when needed.
 - Link to supporting plans or work notes when useful. Keep detailed execution
   checklists in one place rather than maintaining duplicate task lists.
-- Add a `Plan:` line below the repository details linking each supporting plan.
-  Plans follow the [plan guidance](plan-document-guidance.md) and start their
-  names with the roadmap's codename.
+- When supporting plans exist, add a `Plans:` list below the repository details
+  linking each plan within the project folder. Plans follow the
+  [plan guidance](plan-document-guidance.md): use `<codename>--plan.md` for the
+  only or main plan and `<codename>--<plan-name>--plan.md` for other plans.
 - Keep the roadmap a glanceable map: phases and outcomes only. Put execution
   details, facts, and decisions in the plan.
-- Before moving a roadmap to `completed/`, verify that its intended outcome has
-  been achieved and resolve any remaining actions explicitly. Check relative
-  links after moving the file.
+- Before completing the project, verify that its intended outcome has been
+  achieved and resolve remaining actions across the roadmap and supporting
+  documents explicitly. Check links outside the project folder after moving it.
 
 ## Starting Structure
 
@@ -79,7 +79,7 @@ provide supporting execution details; work notes preserve handoffs and history.
 
 [Roadmap guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/roadmaps-document-guidance.md)
 
-Guidance version: 1.4.0
+Guidance version: 1.5.0
 
 Codename: Compass
 
@@ -87,8 +87,10 @@ Primary repository: example-repository
 
 Related repositories: another-repository
 
-Plan:
-[Compass plan](../../example-repository/plans/active/YYYY-MM-DD--compass-plan.md)
+Plans:
+
+- [Main plan](compass--plan.md)
+- [Verification plan](compass--verification--plan.md)
 
 ## Overview
 
@@ -106,3 +108,5 @@ Briefly describe the project's purpose, intended outcome, and scope.
 - [ ] Implement the agreed approach.
 - [ ] Verify the intended outcome.
 ```
+
+Omit the `Plans` list when the project has no supporting plans.

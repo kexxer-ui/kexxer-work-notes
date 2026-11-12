@@ -26,24 +26,35 @@ This is guidance version `0.3.2`.
 
 ## Overview
 
-`kexxer-work-notes` defines lightweight conventions for work notes, plans, and
-project roadmaps maintained collaboratively by people and AI agents.
+`kexxer-work-notes` defines lightweight conventions for organizing projects and
+their work notes, plans, and optional roadmaps, maintained collaboratively by
+people and AI agents.
 
-The convention keeps durable project knowledge in repository documentation and
-uses work notes for current handoffs and concise completed history, plans for
-focused execution details, and roadmaps for projects being deliberately pursued.
-These working documents may live in a separate private repository.
+Each project has one folder containing the working documents it needs. Plans
+hold execution details, optional roadmaps show phases and outcomes, and work
+notes preserve handoffs and concise history. Durable knowledge belongs in source
+repository documentation. Working documents may live in a separate private
+work-notes repository.
 
 ## Developer Notes
+
+### Work Notes Repository Guidance
+
+- [Work Notes Repository Guidance](docs/work-notes-repository-guidance.md)
+  defines project naming, organization, and lifecycle.
+- Project folders live in `projects/active/` or `projects/completed/`; move the
+  whole folder when a project is completed.
+- An optional numeric prefix, such as `2-work-notes`, places the work-notes
+  directory near the top of an alphabetically sorted workspace.
 
 ### Work Notes Document Guidance
 
 - [Work Notes Document Guidance](docs/work-notes-document-guidance.md) is the
   primary, authoritative definition of the work-note format.
-- Each repository work note covers exactly one primary repository and uses the
-  filename `<repository>-work-notes.md`.
-- A work-notes repository may organize notes in matching repository directories
-  and keep supporting plans alongside them.
+- A project's optional `<codename>--work-notes.md` covers that project, with
+  exactly one primary repository and context about other affected repositories.
+- Keep work notes inside the project folder alongside its other documents;
+  create no folders merely to represent repositories.
 
 ### Plan Document Guidance
 
@@ -52,13 +63,14 @@ These working documents may live in a separate private repository.
   embedding a copy.
 - Plans use concise Overview, Facts, TODO, and Done sections composed of simple
   bullets.
-- Plans live in `<repository>/plans/active/` beside their repository work note
-  and move to `completed/` when finished.
+- Use `<codename>--plan.md` for the only or main plan and
+  `<codename>--<plan-name>--plan.md` for other plans; completed plans stay with
+  their project.
 
 ### Roadmaps Document Guidance
 
 - [Roadmaps Document Guidance](docs/roadmaps-document-guidance.md) defines
-  project identity, phased actions, and the active-to-completed workflow.
-- Roadmaps live together in top-level `roadmaps/` directories, with one primary
-  repository and optional related repositories.
+  optional project roadmaps with phases and outcomes.
+- When useful, keep one `<codename>--roadmap.md` inside the project folder,
+  alongside any supporting plans and work notes.
 - Each roadmap links to the authoritative guidance instead of embedding a copy.
