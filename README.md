@@ -27,12 +27,12 @@ This is guidance version `0.3.2`.
 ## Overview
 
 `kexxer-work-notes` defines lightweight conventions for organizing projects and
-their work notes, plans, and optional roadmaps, maintained collaboratively by
-people and AI agents.
+their work notes, plans, and roadmaps, maintained collaboratively by people and
+AI agents.
 
 Each project has one folder containing the working documents it needs. Plans
-hold execution details, optional roadmaps show phases and outcomes, and work
-notes preserve handoffs and concise history. Durable knowledge belongs in source
+hold execution details, roadmaps show phases and outcomes, and work notes
+preserve handoffs and concise history. Durable knowledge belongs in source
 repository documentation. Working documents may live in a separate private
 work-notes repository.
 
@@ -46,6 +46,23 @@ work-notes repository.
   whole folder when a project is completed.
 - An optional numeric prefix, such as `2-work-notes`, places the work-notes
   directory near the top of an alphabetically sorted workspace.
+
+### Repository Version File
+
+- A root `.kexxer-work-notes.yaml` records `repository-guidance-version`, the
+  guidance version the repository layout was last synchronized with.
+- Compare it with the current guidance before reorganizing; update it only after
+  the layout actually complies.
+
+### Confluence Equivalents
+
+- A team Confluence space can mirror the project structure: `Projects` with
+  `Active`, `Paused`, and `Completed` folders.
+- Translate names mechanically: `--` becomes a hyphen with a space on each side,
+  and lowercase hyphenated words become title case, including `projects/active/`
+  becoming `Projects` → `Active`.
+- See [Work Notes Repository Guidance](docs/work-notes-repository-guidance.md)
+  for the full translation rules.
 
 ### Work Notes Document Guidance
 
@@ -70,7 +87,7 @@ work-notes repository.
 ### Roadmaps Document Guidance
 
 - [Roadmaps Document Guidance](docs/roadmaps-document-guidance.md) defines
-  optional project roadmaps with phases and outcomes.
-- When useful, keep one `<codename>--roadmap.md` inside the project folder,
-  alongside any supporting plans and work notes.
+  project roadmaps with phases and outcomes.
+- Start each project with one `<codename>--roadmap.md` inside the project
+  folder; it may be minimal, with only details and an overview, at first.
 - Each roadmap links to the authoritative guidance instead of embedding a copy.

@@ -16,7 +16,7 @@ synchronized with this one.
 
 [Kexxer Work Notes document guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-document-guidance.md)
 is the primary, authoritative copy. Keep embedded copies synchronized with it.
-This is guidance version `1.14.0`.
+This is guidance version `1.15.0`.
 
 This is a project working notes file maintained collaboratively with AI during
 active work.
@@ -25,7 +25,7 @@ active work.
   concise status updates and direct answers over long explanations.
 - Name this file `<codename>--work-notes.md`, using the project's lowercase,
   hyphenated codename so editor tabs identify the project. Keep it inside the
-  project folder alongside its plans and optional roadmap.
+  project folder alongside its plans and roadmap.
 - Follow the
   [work-notes repository guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-repository-guidance.md)
   for project naming and lifecycle. Create folders only for actual projects.
@@ -70,7 +70,7 @@ active work.
 - Put durable architectural explanation in repository documentation rather than
   work notes.
 - Keep detailed execution checklists in the project's plans and link to them
-  rather than duplicating them in these notes. A roadmap is optional.
+  rather than duplicating them in these notes.
 - Move these notes with the entire project folder when the project is completed;
   preserve completed task history.
 - Add an NI only after the work is complete. Preserve completed task history

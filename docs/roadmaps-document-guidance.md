@@ -3,21 +3,21 @@
 This document is the primary, authoritative definition of the roadmap format.
 Its parent document is the [`kexxer-work-notes` README](../README.md).
 
-This is guidance version `1.5.0`.
+This is guidance version `1.6.0`.
 
-A roadmap is an optional map of a project's purpose, phases, and intended
-outcomes. A project exists independently of its roadmap and may have several
-plans without having a roadmap. Plans provide execution details; work notes
-preserve handoffs and history.
+A roadmap is a map of a project's purpose, phases, and intended outcomes. Every
+project starts with one, which may be minimal at first, and a project may have
+several plans. Plans provide execution details; work notes preserve handoffs and
+history.
 
 ## Location and Lifecycle
 
-- Keep the optional roadmap inside its project folder as
-  `<codename>--roadmap.md`, following the
+- Keep the roadmap inside its project folder as `<codename>--roadmap.md`,
+  following the
   [work-notes repository guidance](work-notes-repository-guidance.md). Use the
   project's lowercase, hyphenated codename so editor tabs identify the project.
 - A current project's roadmap lives at
-  `projects/active/YYYY-MM-DD--<repo-dir>--<codename>/<codename>--roadmap.md`.
+  `projects/active/YYYY-MM-DD--<codename>--<repo-dir>/<codename>--roadmap.md`.
 - Keep at most one roadmap per project. Do not create a separate top-level
   roadmap collection or roadmap lifecycle directories.
 - The project folder determines overall status; do not maintain a duplicate
@@ -40,6 +40,9 @@ preserve handoffs and history.
 - Record the project's stable codename and exactly one primary repository using
   its exact directory name, matching the project folder. List related
   repositories only when applicable.
+- A new roadmap may contain only the title, guidance link, version, project
+  details, and `## Overview`. Add phase headings when the work is planned; do
+  not invent phases to fill it. Create it when the project folder is created.
 - Follow the project details with `## Overview`, then numbered phase headings
   such as `## Phase 1: Establish the Foundation`.
 - Use the overview to explain the project's purpose, intended outcome, and scope
@@ -79,7 +82,7 @@ preserve handoffs and history.
 
 [Roadmap guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/roadmaps-document-guidance.md)
 
-Guidance version: 1.5.0
+Guidance version: 1.6.0
 
 Codename: Compass
 
@@ -110,3 +113,21 @@ Briefly describe the project's purpose, intended outcome, and scope.
 ```
 
 Omit the `Plans` list when the project has no supporting plans.
+
+A new project may start with only its details and overview:
+
+```markdown
+# Project Title
+
+[Roadmap guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/roadmaps-document-guidance.md)
+
+Guidance version: 1.6.0
+
+Codename: Compass
+
+Primary repository: example-repository
+
+## Overview
+
+Briefly describe the project's purpose, intended outcome, and scope.
+```

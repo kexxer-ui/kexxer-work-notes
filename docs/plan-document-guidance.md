@@ -3,10 +3,10 @@
 This document is the primary, authoritative definition of the plan format. Its
 parent document is the [`kexxer-work-notes` README](../README.md).
 
-This is guidance version `1.3.0`.
+This is guidance version `1.4.0`.
 
 A plan holds the execution details for focused work within a project. A project
-may have multiple plans and does not require a
+may have multiple plans and starts with a
 [roadmap](roadmaps-document-guidance.md). Work notes preserve handoffs and
 history.
 
@@ -15,7 +15,7 @@ history.
 - Keep each plan inside its project folder, following the
   [work-notes repository guidance](work-notes-repository-guidance.md).
 - A current project's plan lives at
-  `projects/active/YYYY-MM-DD--<repo-dir>--<codename>/`.
+  `projects/active/YYYY-MM-DD--<codename>--<repo-dir>/`.
 - Use `<codename>--plan.md` for the project's only plan or its main plan, even
   when other plans exist. At most one plan per project uses this short form.
 - For other plans, use `<codename>--<plan-name>--plan.md`. Choose a short,
@@ -75,7 +75,7 @@ history.
 
 [Plan guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/plan-document-guidance.md)
 
-Guidance version: 1.3.0
+Guidance version: 1.4.0
 
 Codename: Compass
 
