@@ -4,7 +4,7 @@ This document is the primary, authoritative definition of work-notes repository
 organization and project lifecycle. Its parent document is the
 [`kexxer-work-notes` README](../README.md).
 
-This is guidance version `1.1.0`.
+This is guidance version `1.2.0`.
 
 A project is a piece of work being deliberately pursued toward an outcome. Its
 folder gives it an identity and keeps its working documents together. A project
@@ -43,11 +43,11 @@ starts with a roadmap, which may be minimal, and may have multiple plans.
   README.md
   projects/
     active/
-      2026-11-11--compass--example-repository/
-        compass--roadmap.md
-        compass--plan.md
-        compass--verification--plan.md
-        compass--work-notes.md
+      2026-11-11--glass--example-repository/
+        glass--roadmap.md
+        glass--plan.md
+        glass--verification--plan.md
+        glass--work-notes.md
     completed/
 ```
 
@@ -69,7 +69,7 @@ when empty if the repository needs to track them in Git.
   names and documents; do not add per-project metadata files.
 
 ```yaml
-repository-guidance-version: 1.1.0
+repository-guidance-version: 1.2.0
 ```
 
 ## Project Folder Names
@@ -77,8 +77,8 @@ repository-guidance-version: 1.1.0
 - Use `YYYY-MM-DD--<codename>--<repo-dir>`.
 - Use the project's creation date, not the date it was moved or reorganized.
 - Use the exact primary repository directory name for `<repo-dir>`.
-- Choose a stable codename. Use lowercase, hyphenated words for its folder-name
-  form and document filenames.
+- Choose a stable codename, such as `glass`. Use lowercase, hyphenated words
+  for its folder-name form and document filenames.
 - Keep the folder name stable through lifecycle moves. Do not change its date or
   rename it merely because a plan is added or a phase finishes.
 
@@ -128,11 +128,11 @@ organized the same way as local working documents.
 - Translate names mechanically: `--` becomes a hyphen with a space on each side,
   and lowercase hyphenated words become title case. This applies to project
   folders and to the `projects` and lifecycle directories alike.
-- On disk, `projects/active/2026-11-11--compass--example-repository/` is
-  `Projects` → `Active` → `2026-11-11 - Compass - Example Repository` in
+- On disk, `projects/active/2026-11-11--glass--example-repository/` is
+  `Projects` → `Active` → `2026-11-11 - Glass - Example Repository` in
   Confluence.
 - The product name takes the place of the primary repository directory name.
-- Put the codename in every document title, such as `Compass - Roadmap`, because
+- Put the codename in every document title, such as `Glass - Roadmap`, because
   page titles must be unique within a space.
 - Every project starts with a roadmap, as in this repository. Plans and work
   notes remain optional.
@@ -142,6 +142,35 @@ organized the same way as local working documents.
   instead of maintaining a separate list that can drift.
 - Keep process and reference documents outside `Projects`, such as in a
   `Documentation` folder.
+
+### Local and Confluence Copies
+
+- Confluence is always optional. A project that does not use it has no
+  Confluence links, lines, or pages, and nothing below applies to it.
+- When a document has a Confluence page, add `Confluence: <url>` below its
+  other header lines, linking that page, so the copy to compare is known.
+- When a linked document has a Confluence page, follow the local link with a
+  Confluence link, such as
+  `Roadmap: [Glass roadmap](glass--roadmap.md) [Confluence](<url>)`. Omit it
+  when that document has no page.
+- A document may exist both locally and in Confluence. The local file is the
+  master, because its format rules can be checked there. Mirroring is optional:
+  a plan may stay local until someone else needs it.
+- Confluence pages can be edited and that cannot be prevented. Before updating a
+  page from the local file, compare the two and bring any intended Confluence
+  edits back into the local file first. Do not overwrite them.
+- Check for differences whenever a page is updated, and before completing a
+  project, rather than assuming the copies still match.
+- Translate each filename into its page title with the same mechanical rule:
+  `glass--deployment-1-prepare--plan.md` becomes
+  `Glass - Deployment 1 Prepare - Plan`.
+- A Confluence page's title replaces the document's `#` heading, so the page
+  body begins at the guidance link.
+- Links between documents follow the medium. Locally, link by relative file
+  path, such as `glass--roadmap.md`. On Confluence, link the translated page
+  instead. This includes a roadmap's `Plans:` list and a plan's `Roadmap:` line.
+- Keep the format rules, such as roadmap checkbox lines and plan bullet length,
+  true in both copies so a page can be copied back without reformatting.
 
 ## Reorganizing Existing Material
 

@@ -77,11 +77,11 @@ history.
 
 Guidance version: 1.4.0
 
-Codename: Compass
+Codename: Glass
 
 Primary repository: example-repository
 
-Roadmap: [Compass roadmap](compass--roadmap.md)
+Roadmap: [Glass roadmap](glass--roadmap.md)
 
 ## Overview
 

@@ -61,8 +61,18 @@ work-notes repository.
 - Translate names mechanically: `--` becomes a hyphen with a space on each side,
   and lowercase hyphenated words become title case, including `projects/active/`
   becoming `Projects` → `Active`.
+- A document may exist locally and in Confluence. The local file is the master;
+  compare the two before updating a page, because Confluence can be edited.
+- Locally, documents link to each other by file path; on Confluence they link to
+  the translated pages.
 - See [Work Notes Repository Guidance](docs/work-notes-repository-guidance.md)
-  for the full translation rules.
+  for the full translation and copy rules.
+
+### Marcia, Marcia, Marcia!
+
+- Every example in this repository's documents uses the codename `tropicana`, no
+  I mean, `glass` (`Glass` in titles). It is illustrative, not a real project's
+  codename.
 
 ### Work Notes Document Guidance
 

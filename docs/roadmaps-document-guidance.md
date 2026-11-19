@@ -84,7 +84,7 @@ history.
 
 Guidance version: 1.6.0
 
-Codename: Compass
+Codename: Glass
 
 Primary repository: example-repository
 
@@ -92,8 +92,8 @@ Related repositories: another-repository
 
 Plans:
 
-- [Main plan](compass--plan.md)
-- [Verification plan](compass--verification--plan.md)
+- [Main plan](glass--plan.md)
+- [Verification plan](glass--verification--plan.md)
 
 ## Overview
 
@@ -123,7 +123,7 @@ A new project may start with only its details and overview:
 
 Guidance version: 1.6.0
 
-Codename: Compass
+Codename: Glass
 
 Primary repository: example-repository
 
