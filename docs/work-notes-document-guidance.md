@@ -3,7 +3,7 @@
 This document is the primary, authoritative definition of the work-note format.
 Its parent document is the [`kexxer-work-notes` README](../README.md).
 
-This is guidance version `1.17.0`.
+This is guidance version `1.17.1`.
 
 Work notes are optional project documents maintained collaboratively by people
 and AI agents during active work. They are a concise, dated history of the
@@ -82,8 +82,11 @@ and remaining actions; work notes hold neither.
   except when correcting an inaccurate entry.
 - Organize completed tasks under `## YYYY-MM-DD` date sections. Keep the most
   recent date section first and add new NIs there.
-- Within each date section, append new NIs at bottom, continue sequential
-  numbering, and keep lists tight without blank lines between NIs.
+- Within each date section, append new NIs at bottom and keep lists tight
+  without blank lines between NIs.
+- Number NIs with one running count across the whole file, never restarting at a
+  new date section, so each NI keeps a stable number. Because the newest date
+  section is first, the numbers descend from one section to the next.
 - If the current date section does not exist, create it immediately above the
   older date sections before adding the completed task.
 - Inline Markdown is allowed in numbered items and nested bullets, including
@@ -96,7 +99,7 @@ and remaining actions; work notes hold neither.
 
 [Work notes guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-document-guidance.md)
 
-Guidance version: 1.17.0
+Guidance version: 1.17.1
 
 ## 2026-11-11
 
