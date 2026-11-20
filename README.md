@@ -55,8 +55,8 @@ work-notes repository.
   primary, authoritative definition of the work-note format.
 - A project's optional `<codename>--work-notes.md` covers that project, with
   exactly one primary repository and context about other affected repositories.
-- Keep work notes inside the project folder alongside its other documents;
-  create no folders merely to represent repositories.
+- Keep work notes inside the project folder; each links to the guidance instead
+  of embedding a copy, and records the version it was synchronized with.
 
 ### Plan Document Guidance
 

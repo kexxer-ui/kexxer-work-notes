@@ -3,76 +3,81 @@
 This document is the primary, authoritative definition of the work-note format.
 Its parent document is the [`kexxer-work-notes` README](../README.md).
 
-Work notes are optional project documents. Keep `<codename>--work-notes.md`
-inside its project folder, following the
-[work-notes repository guidance](work-notes-repository-guidance.md). Its scope
-is that project, even when the primary repository has other projects.
+This is guidance version `1.17.0`.
 
-Embed the following guidance in each project work note and keep every copy
-synchronized with this one.
+Work notes are optional project documents maintained collaboratively by people
+and AI agents during active work. They are a concise, dated history of the
+project's work. The [roadmap](roadmaps-document-guidance.md) maps phases and
+outcomes, and [plans](plan-document-guidance.md) hold execution details, facts,
+and remaining actions; work notes hold neither.
 
-```markdown
-## Work Notes Document Guidance
+## Location and Lifecycle
 
-[Kexxer Work Notes document guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-document-guidance.md)
-is the primary, authoritative copy. Keep embedded copies synchronized with it.
-This is guidance version `1.15.0`.
-
-This is a project working notes file maintained collaboratively with AI during
-active work.
-
-- Please respond with very short messages during this conversation. Prefer
-  concise status updates and direct answers over long explanations.
-- Name this file `<codename>--work-notes.md`, using the project's lowercase,
-  hyphenated codename so editor tabs identify the project. Keep it inside the
-  project folder alongside its plans and roadmap.
-- Follow the
-  [work-notes repository guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-repository-guidance.md)
-  for project naming and lifecycle. Create folders only for actual projects.
-- Scope these notes to this project. Other projects in the same repository have
+- Keep `<codename>--work-notes.md` inside its project folder alongside the
+  project's plans and roadmap, following the
+  [work-notes repository guidance](work-notes-repository-guidance.md). Use the
+  project's lowercase, hyphenated codename so editor tabs identify the project.
+- A current project's work notes live at
+  `projects/active/YYYY-MM-DD--<codename>--<repo-dir>/<codename>--work-notes.md`.
+- Keep at most one work-notes file per project. Create folders only for actual
+  projects.
+- Scope the notes to this project. Other projects in the same repository have
   their own folders and may keep their own work notes.
+- Work notes are a developer's and AI's history. Keep them local; they are not
+  mirrored to Confluence unless the
+  [Confluence guidance](confluence-guidance.md) is later extended to cover them.
+- Move the notes with the entire project folder when the project is completed;
+  preserve completed task history.
+
+## Document Shape
+
+- Give the notes a descriptive `#` title, such as `# Glass Work Notes`.
+- Link to this guidance using its authoritative Kexxer URL. Do not embed or
+  duplicate the guidance in the work notes.
+- Add `Guidance version: <version>` below the link, recording the version the
+  work notes were last synchronized with.
+- Before editing work notes, compare their recorded version with this guidance.
+  If it is older or missing, read the current guidance and bring the notes into
+  compliance before updating the recorded version. Do not update the version
+  merely because newer guidance exists.
+- Follow the header with `## YYYY-MM-DD` date sections containing numbered notes
+  items. The notes have no other sections: the primary repository is in the
+  roadmap and plans, upcoming work is in the plans' TODO, and lasting facts are
+  in the plans' Facts.
+- The notes may grow to hundreds of items within one project; that is expected.
+
+## Working With AI
+
+- Respond with very short messages during the conversation. Prefer concise
+  status updates and direct answers over long explanations.
 - When the human identifies this document as the active record for the work,
   confirm that relationship and begin maintaining the document immediately. Do
   not wait for a separate request to edit it.
-- For each subsequent request within the document's scope, update the relevant
-  working sections alongside the response and add the completed NI before
-  finishing the response.
-- Before creating or refreshing working sections, read the primary repository's
-  README and any directly relevant documentation.
-- Always keep `## What's Next` first among the working sections and
-  `## Current Status` last, above the dated task sections.
-- Place `## Repositories Covered` between `What's Next` and `Current Status`.
-  List exactly one primary repository using its exact directory name, matching
-  the project folder.
-- Mention dependencies and other affected repositories in `What's Next`,
-  `Current Status`, or NIs rather than adding them to `Repositories Covered`.
-- Limit `What's Next` to three bullets of no more than 25 words each. Use it for
-  immediate work only. If nothing is planned, write
-  `- Nothing is currently planned.`
-- Name every affected repository explicitly in each `What's Next` bullet; do not
-  rely on the document title or `Repositories Covered` for scope.
-- Limit `Current Status` to ten bullets of no more than 25 words each. Keep only
-  facts, decisions, blockers, and warnings that affect upcoming work.
-- Refresh working sections as facts change. Remove completed or irrelevant
-  details instead of accumulating history there.
+- For each subsequent request within the document's scope, add the completed NI
+  before finishing the response.
+- Before adding NIs, read the primary repository's README and any directly
+  relevant documentation.
+
+## Notes Items
+
 - Call each numbered entry a notes item (`NI`; plural `NIs`).
 - Treat an NI as a small unit representing roughly one to five minutes of
   research, thought, questioning, or implementation; most NIs represent about
   one minute.
 - NIs usually correspond to one user request and AI response. When a request
   explicitly contains distinct items, add one NI for each.
-- Limit each numbered-item title to 12 words.
+- Limit each numbered-item title to 12 words. When an NI records a finding,
+  state the result in the title so the history can be scanned.
 - Give each NI one to three nested bullets of no more than 20 words each; prefer
   one or two bullets.
-- Record decisions, completed changes, and important validation outcomes, not
-  the full reasoning journey. Combine implementation and validation when
-  practical.
+- Record decisions, completed changes, findings, and important validation
+  outcomes, not the full reasoning journey. Combine implementation and
+  validation when practical.
+- Name the repository an NI concerns when the project involves more than one.
 - Put durable architectural explanation in repository documentation rather than
-  work notes.
+  work notes. Put facts that stay true and shape the work in the plan's Facts.
 - Keep detailed execution checklists in the project's plans and link to them
-  rather than duplicating them in these notes.
-- Move these notes with the entire project folder when the project is completed;
-  preserve completed task history.
+  rather than duplicating them in the notes.
 - Add an NI only after the work is complete. Preserve completed task history
   except when correcting an inaccurate entry.
 - Organize completed tasks under `## YYYY-MM-DD` date sections. Keep the most
@@ -83,4 +88,18 @@ active work.
   older date sections before adding the completed task.
 - Inline Markdown is allowed in numbered items and nested bullets, including
   `code`, **emphasis**, and [links](https://commonmark.org/).
+
+## Starting Structure
+
+```markdown
+# Glass Work Notes
+
+[Work notes guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/work-notes-document-guidance.md)
+
+Guidance version: 1.17.0
+
+## 2026-11-11
+
+1. Created the Glass project folder and roadmap
+   - Folder `2026-11-11--glass--example-repository`.
 ```

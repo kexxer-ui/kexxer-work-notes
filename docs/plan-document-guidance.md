@@ -3,7 +3,7 @@
 This document is the primary, authoritative definition of the plan format. Its
 parent document is the [`kexxer-work-notes` README](../README.md).
 
-This is guidance version `1.5.0`.
+This is guidance version `1.6.0`.
 
 A plan holds the execution details for focused work within a project. A project
 may have multiple plans and starts with a
@@ -60,10 +60,10 @@ history.
 - Keep plans short and easy to scan. Move durable explanation into repository
   documentation.
 - Use `Overview` for the plan's goal and scope.
-- Use `Facts` only for current, confirmed constraints, decisions, and blockers
-  needed to carry out the remaining work.
-- Before adding a fact, ask whether omitting it would change an upcoming
-  decision or action. If not, leave it out of `Facts`.
+- Use `Facts` for current, confirmed context, constraints, decisions, and
+  blockers that apply to any remaining work, not only the next step.
+- Before adding a fact, ask whether omitting it would change how any remaining
+  step is understood or carried out. If not, leave it out of `Facts`.
 - Keep investigation chronology, exhaustive inventories, and detailed completed
   work in the project's work notes. Link to durable procedures in source
   documentation instead of copying them into `Facts`.
@@ -86,7 +86,7 @@ history.
 
 [Plan guidance](https://github.com/kexxer-ui/kexxer-work-notes/blob/main/docs/plan-document-guidance.md)
 
-Guidance version: 1.5.0
+Guidance version: 1.6.0
 
 Codename: Glass
 
@@ -100,7 +100,7 @@ Roadmap: [Glass roadmap](glass--roadmap.md)
 
 ## Facts
 
-- Record only current constraints needed for the remaining work.
+- Record current context and constraints that apply to the remaining work.
 
 ## TODO
 
