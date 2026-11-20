@@ -1,28 +1,8 @@
 # Kexxer Work Notes
 
-## Guidance For This Document
+[README guidance](https://github.com/kexxer-ui/kexxer-readme/blob/main/docs/readme-document-guidance.md)
 
-[Kexxer README document guidance](https://github.com/kexxer-ui/kexxer-readme/blob/main/docs/readme-document-guidance.md)
-is the primary, authoritative copy. Keep embedded copies synchronized with it.
-This is guidance version `0.3.2`.
-
-- Apart from this guidance section, a repository README has two main `##`
-  sections: Overview and Developer Notes.
-- Overview is a short free-form description of what the repository is and
-  contains.
-- Developer Notes contains `###` subsections, each with one to three bullets,
-  preferably fewer than 140 characters each.
-- Developer Notes subsections should be small and specific, such as "The Car
-  Class," rather than broad, such as "Security."
-- Each bullet describes its subsection topic.
-- A Developer Notes subsection may include one code block after its bullets.
-- If a subsection needs more than three bullets, keep its README entry to
-  exactly three: two summary bullets and one link to a fuller `docs/` document.
-- Sub-documents may use as many bullets as needed; avoid creating
-  sub-sub-documents.
-- Each sub-document should reference its repository README as its parent.
-- Fully capture the repository's nature in one short file without making it
-  difficult to read.
+Guidance version: 0.4.0
 
 ## Overview
 
@@ -56,17 +36,12 @@ work-notes repository.
 
 ### Confluence Equivalents
 
-- A team Confluence space can mirror the project structure: `Projects` with
-  `Active`, `Paused`, and `Completed` folders.
-- Translate names mechanically: `--` becomes a hyphen with a space on each side,
-  and lowercase hyphenated words become title case, including `projects/active/`
-  becoming `Projects` → `Active`.
-- A document may exist locally and in Confluence. The local file is the master;
-  compare the two before updating a page, because Confluence can be edited.
-- Locally, documents link to each other by file path; on Confluence they link to
-  the translated pages.
-- See [Work Notes Repository Guidance](docs/work-notes-repository-guidance.md)
-  for the full translation and copy rules.
+- Confluence can mirror project folders and documents using translated names and
+  links.
+- The local file is the master; reconcile Confluence edits before updating the
+  mirrored page.
+- [Confluence Guidance](docs/confluence-guidance.md) defines mirroring, naming,
+  and synchronization rules.
 
 ### Marcia, Marcia, Marcia!
 
@@ -88,8 +63,8 @@ work-notes repository.
 - [Plan Document Guidance](docs/plan-document-guidance.md) is the primary,
   authoritative definition of the plan format; each plan links to it instead of
   embedding a copy.
-- Plans use concise Overview, Facts, TODO, and Done sections composed of simple
-  bullets.
+- Plans use concise Overview, Facts, TODO, and Done sections; TODO is numbered
+  in execution order, while the other sections use bullets.
 - Use `<codename>--plan.md` for the only or main plan and
   `<codename>--<plan-name>--plan.md` for other plans; completed plans stay with
   their project.
